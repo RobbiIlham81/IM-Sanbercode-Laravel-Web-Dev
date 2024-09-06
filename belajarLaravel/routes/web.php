@@ -18,3 +18,11 @@ use App\Http\Controllers\biodataController;
 Route::get('/', [indexController::class, 'dashboard']);
 Route::get('/daftar', [biodataController::class, 'pendaftaran']);
 Route::post('/home', [biodataController::class, 'home']);
+
+Route::get('/data-table', function() {
+    return view('page.data-table');
+});
+
+Route::get('/table', function() {
+    return view('page.table');
+});
